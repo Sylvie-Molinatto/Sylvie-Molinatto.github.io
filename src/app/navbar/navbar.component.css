@@ -5,3 +5,21 @@
 .navbar-toggler:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.theme-switcher {
+    min-width: auto;
+    max-width: fit-content;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-switcher:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
