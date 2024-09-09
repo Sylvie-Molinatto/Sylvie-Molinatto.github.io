@@ -1,5 +1,5 @@
 .languageDropdown{
-    min-width: auto;
+    min-width: auto;  
 }
 
 .navbar-toggler:focus {
@@ -8,7 +8,7 @@
 
 .theme-switcher {
     min-width: auto;
-    max-width: fit-content;
+    max-width: min-content;
     padding: 10px;
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
@@ -22,4 +22,14 @@
 .theme-switcher:hover {
     background-color: var(--secondary-color);
     color: var(--background-color);
+}
+
+.custom-button:active {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.offcanvas{
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
