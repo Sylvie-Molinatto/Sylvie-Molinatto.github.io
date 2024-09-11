@@ -1,11 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
-/* Put these styles in: src/styles.css */
+/* Coolors Exported Palette - https://coolors.co/faf0f1-fa8993-5c3d3f-454142-ad6f74 */
 
 /* Tema chiaro */
 :root {
+  --lavender-blush: #FAF0F1ff;
+  --salmon-pink: #FA8993ff;
+  --rose-ebony: #5C3D3Fff;
+  --jet: #454142ff;
+  --old-rose: #AD6F74ff;
+  
   --primary-color: #ffffff;
-  --secondary-color: #6c757d;
-  --background-color: #ffffff;
+  --secondary-color: #000000;
+  --background-color: var(--lavender-blush);
   --text-color: #000000;
 }
 
@@ -13,7 +18,7 @@
 [data-theme="dark"] {
   --primary-color: #343a40;
   --secondary-color: #ffffff;
-  --background-color: #343a40;
+  --background-color: var(--jet);
   --text-color: #ffffff;
 }
 
@@ -34,6 +39,10 @@ header {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+p{
+  margin: 0;
 }
 
 .navbar {
