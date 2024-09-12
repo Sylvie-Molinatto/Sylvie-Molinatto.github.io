@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [NavbarComponent, HomeComponent, FooterComponent, RouterModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'portfolio-website';
@@ -22,7 +22,7 @@ export class AppComponent {
     'it': 'Italiano'
   };
 
-  constructor(private translate: TranslateService) {
+  constructor(@Inject(TranslateService) private translate: TranslateService) {
     this.translate.setDefaultLang(this.selectedLanguage);
   }
 

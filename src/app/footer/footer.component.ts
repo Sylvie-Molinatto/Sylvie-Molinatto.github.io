@@ -4,9 +4,9 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [ TranslateModule],
+  imports: [TranslateModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
   currentYear: number = new Date().getFullYear();
