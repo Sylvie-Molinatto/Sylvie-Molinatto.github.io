@@ -1,65 +1,82 @@
-section {
-    background-color: var(--background-color);
-    padding-top: 3.125rem;
-    margin-top: 0;
-  }
-  
-  .landing {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .landing-details {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .landing-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .profession {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-  
-  .description {
-    margin-bottom: 1.25rem;
-  }
-  
-  .social-icons-container {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .social-icons-container li:not(:last-child) {
-    margin-right: 0.625rem;
-  }
-  
-  .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2em;
-    width: 2em;
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3em;
+}
+
+.container>* {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.left-side{
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: start;
+}
+
+.right-side{
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: end;
+}
+
+.profile_img {
+  max-width: 25em;
+}
+
+.profile_img:hover{
+  transform: scale(1.1);
+}
+
+.description {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Stili per la disposizione verticale su schermi piccoli */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente il contenuto */
     text-align: center;
-    vertical-align: middle;
-    line-height: 2;
-    border-radius: 50%;
-    fill: var(--social-icon-text-color);
-    background: var(--social-icon-color);
-    border-color: var(--social-icon-color);
-    transition: background-color 0.15s ease-in-out;
   }
-  
+
   .profile_img {
-    max-width: 60%;
-    height: auto;
+    max-width: 25em;
+    padding-top: 3em;
+    padding-bottom: 2em;
   }
+
+  .social-icons-container {
+    justify-content: center;
+  }
+}
+
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  fill: var(--salmon-pink);
+  background: var(--background-color);
+  border: 1px solid var(--salmon-pink);
+  transition: var(--background-color) 0.15s ease-in-out;
+  margin-right: .5em;
+}

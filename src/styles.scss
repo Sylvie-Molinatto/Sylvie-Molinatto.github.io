@@ -2,61 +2,79 @@
 
 /* Coolors Exported Palette - https://coolors.co/faf0f1-fa8993-5c3d3f-454142-ad6f74 */
 
-/* Tema chiaro */
+/* Variabili di colore */
 :root {
-    --lavender-blush: #FAF0F1ff;
-    --salmon-pink: #FA8993ff;
-    --rose-ebony: #5C3D3Fff;
-    --jet: #454142ff;
-    --old-rose: #AD6F74ff;
-    
-    --primary-color: #ffffff;
-    --secondary-color: #000000;
-    --background-color: var(--lavender-blush);
-    --text-color: #000000;
-  }
-  
-  /* Tema scuro */
-  [data-theme="dark"] {
-    --primary-color: #343a40;
-    --secondary-color: #ffffff;
-    --background-color: var(--jet);
-    --text-color: #ffffff;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--background-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Applica le variabili CSS */
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  p{
-    margin: 0;
-  }
-  
-  .navbar {
-    background-color: var(--primary-color);
-  }
-  
-  .btn-outline-secondary {
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
-  }
-  
-  .btn-outline-secondary:hover {
+  --lavender-blush: #FAF0F1ff;
+  --salmon-pink: #FA8993ff;
+  --rose-ebony: #5C3D3Fff;
+  --jet: #454142ff;
+  --old-rose: #AD6F74ff;
+
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --background-color: #F7F7F8;
+  --text-color: #000000;
+}
+
+/* Tema scuro */
+[data-theme="dark"] {
+  --primary-color: #343a40;
+  --secondary-color: #ffffff;
+  --background-color: var(--jet);
+  --text-color: #ffffff;
+}
+
+/* Mixin per ombre */
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
+main{
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Stili globali */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Stili per il header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--background-color);
+  @include box-shadow(0, 2px, 2px, rgba(0, 0, 0, 0.1));
+}
+
+/* Stili per i paragrafi */
+p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+/* Stili per la navbar */
+.navbar {
+  background-color: var(--primary-color);
+  padding: .5rem;
+}
+
+/* Stili per i bottoni */
+.btn-outline-secondary {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: transparent;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
     background-color: var(--secondary-color);
     color: var(--background-color);
   }
+}
