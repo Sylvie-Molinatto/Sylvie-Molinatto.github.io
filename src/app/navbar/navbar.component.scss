@@ -47,7 +47,58 @@
     color: var(--text-color);
 }
 
-.btn-outline-secondary.custom:focus{
+.btn-outline-secondary.custom:focus {
     background-color: var(--text-color);
     color: var(--background-color);
+}
+
+.offcanvas-header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.offcanvas-body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.btn-close {
+    --bs-btn-close-focus-shadow: 0;
+    --bs-btn-close-color: var(--text-color);
+    --bs-btn-close-bg: var(--background-color);
+}
+
+.custom-close-btn{
+    padding-bottom: 18px;
+    padding-right: 12px;
+
+    &:hover {
+        transform: scale(1.09);
+    }
+}
+
+.custom-toggler {
+    border: none; 
+    background-color: transparent;
+    padding: 0; 
+
+    .bi-list {
+        color: var(--text-color); 
+        width: 30px; 
+        height: 30px; 
+    }
+
+    &:focus {
+        outline: none; 
+        box-shadow: none;
+    }
+
+    &:active {
+        outline: none;
+        box-shadow: none;
+    } 
+    
+    &:hover {
+        transform: scale(1.09);
+    }
 }
