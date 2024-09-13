@@ -1,16 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, NgbDropdownModule, TranslateModule],
+  imports: [CommonModule, NgbDropdownModule, TranslateModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent{
   @Input() selectedLanguage!: string;
   @Input() selectedTheme!: 'light' | 'dark';
   @Input() languageMap!: { [key: string]: string };
