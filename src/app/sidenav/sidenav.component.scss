@@ -1,4 +1,4 @@
-.navbar {
+.offcanvas {
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -14,10 +14,6 @@
 
 .nav-link.active {
     color: var(--old-rose);
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .languageDropdown {
@@ -47,7 +43,47 @@
     color: var(--text-color);
 }
 
-.btn-outline-secondary.custom:focus{
+.btn-outline-secondary.custom:focus {
     background-color: var(--text-color);
     color: var(--background-color);
 }
+
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+}
+
+.offcanvas-backdrop.show {
+    display: block;
+}
+
+.offcanvas {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  .offcanvas.show {
+    transform: translateX(0);
+  }
+  
+  .offcanvas-backdrop {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+  }
+  
+  .offcanvas-backdrop.show {
+    opacity: 1;
+  }
