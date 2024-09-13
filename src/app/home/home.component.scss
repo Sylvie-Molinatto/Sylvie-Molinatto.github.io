@@ -79,4 +79,8 @@
   border: 1px solid var(--salmon-pink);
   transition: var(--background-color) 0.15s ease-in-out;
   margin-right: .5em;
+
+  &:hover {
+    transform: scale(1.09);
+  }
 }

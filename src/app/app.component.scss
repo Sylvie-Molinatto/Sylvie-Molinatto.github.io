@@ -5,6 +5,10 @@
   min-height: 100vh;
 }
 
+header {
+  padding: .5rem;
+}
+
 .content {
   flex: 1;
   display: flex;
@@ -14,8 +18,4 @@
 
 app-footer {
   margin-top: auto;
-}
-
-header {
-  padding: .5rem;
 }
