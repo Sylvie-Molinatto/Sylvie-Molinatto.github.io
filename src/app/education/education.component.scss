@@ -17,11 +17,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3em;
 }
 
 .steps {
-  max-width: 300px;
+  max-width: 70vw;
   margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-info{
+  margin-left: auto;
 }
 
 .step {
@@ -39,7 +49,8 @@ body {
   }
 
   .info {
-    margin: 2px 0 20px;
+    margin: 2px 0 0 0;
+    padding: 0 0 0 1em;
   }
 
   .title {
@@ -54,15 +65,17 @@ body {
   }
 
   .text {
-    font-size: 12px;
+    width: 50vw;
+    font-size: 14px;
     color: var(--text-color);
-    padding-bottom: 0;
+    padding-bottom: 1em;
+    padding-left: 1em;
     margin: 0;
   }
 
   &:not(:last-child) {
     &:after {
-      height: 83%;
+      height: 87%;
     }
    
   }

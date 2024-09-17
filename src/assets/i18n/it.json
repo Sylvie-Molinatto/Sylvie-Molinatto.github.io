@@ -13,6 +13,8 @@
         "BACHELOR": "Laurea triennale in Ingegneria Gestionale",
         "MASTER": "Laurea magistrale in Ingegneria Informatica",
         "HIGH_SCHOOL": "Diploma di maturità scientifica",
-        "PRESENT": "Presente"
+        "PRESENT": "Presente",
+        "BACHELOR_INFO": "Ho frequentato la laurea triennale in Ingegneria Gestionale (L-8, Ingegneria dell'informazione) presso il Politecnico di Torino.",
+        "MASTER_INFO": "Attualmente sto conseguendo la laurea magistrale in Ingegneria Informatica (orientamento Software) presso il Politecnico di Torino."
     }
 }

@@ -13,6 +13,8 @@
         "BACHELOR": "Bachelor's Degree in Management Engineering",
         "MASTER": "Master's Degree in Computer Engineering",
         "HIGH_SCHOOL": "High School Diploma in Science",
-        "PRESENT": "Current"
+        "PRESENT": "Current",
+        "BACHELOR_INFO": "I attended the bachelor’s degree in Management Engineering (L-8, Information Engineering) at Politecnico di Torino.",
+        "MASTER_INFO": "I’m currently pursuing the master’s degree in Computer Engineering (Software orientation) at Politecnico di Torino."
     }
 }

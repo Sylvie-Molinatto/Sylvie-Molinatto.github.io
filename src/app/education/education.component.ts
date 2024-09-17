@@ -24,27 +24,23 @@ export class EducationComponent {
   }
 
   loadEvents() {
-    this.translate.get(['EDU.MASTER', 'EDU.BACHELOR', 'EDU.HIGH_SCHOOL', 'EDU.PRESENT']).subscribe(translations => {
+    this.translate.get(['EDU.MASTER', 'EDU.BACHELOR', 'EDU.HIGH_SCHOOL', 'EDU.PRESENT', 'EDU.BACHELOR_INFO', 'EDU.MASTER_INFO']).subscribe(translations => {
       this.events = [
         {
           startYear: '2022',
           endYear: translations['EDU.PRESENT'],
           title: translations['EDU.MASTER'],
           location: 'Politecnico di Torino',
-          description: '',
-          logo: 'Logo_PoliTo.png',
-          color: '#5C3D3Fff',
-          icon: 'pi pi-spinner-dotted'
+          description: translations['EDU.MASTER_INFO'],
+          logo: 'polito.png',
         },
         {
           startYear: '2019',
           endYear: '2022',
           title: translations['EDU.BACHELOR'],
           location: 'Politecnico di Torino',
-          description: '',
-          logo: 'Logo_PoliTo.png',
-          color: '#FA8993ff',
-          icon: 'pi pi-check',
+          description: translations['EDU.BACHELOR_INFO'],
+          logo: 'polito.png',
           grade: '96/110'
         },
         {
@@ -54,8 +50,6 @@ export class EducationComponent {
           location: 'Liceo Scientifico Statale A. Volta',
           description: '',
           logo: '',
-          color: '#FA8993ff',
-          icon: 'pi pi-check',
           grade: '90/100'
         }
       ];
