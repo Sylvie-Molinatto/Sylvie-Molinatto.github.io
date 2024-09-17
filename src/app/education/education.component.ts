@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -8,7 +8,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   imports: [CommonModule, TranslateModule],
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss'],
-  encapsulation: ViewEncapsulation.None
 })
 export class EducationComponent {
   events: Array<any>;
@@ -32,7 +31,8 @@ export class EducationComponent {
           title: translations['EDU.MASTER'],
           location: 'Politecnico di Torino',
           description: translations['EDU.MASTER_INFO'],
-          logo: 'polito.png',
+          logoBlack: 'polito.png',
+          logoWhite: 'polito_white.png',
         },
         {
           startYear: '2019',
@@ -40,7 +40,8 @@ export class EducationComponent {
           title: translations['EDU.BACHELOR'],
           location: 'Politecnico di Torino',
           description: translations['EDU.BACHELOR_INFO'],
-          logo: 'polito.png',
+          logoBlack: 'polito.png',
+          logoWhite: 'polito_white.png',
           grade: '96/110'
         },
         {
@@ -49,7 +50,8 @@ export class EducationComponent {
           title: translations['EDU.HIGH_SCHOOL'],
           location: 'Liceo Scientifico Statale A. Volta',
           description: '',
-          logo: '',
+          logoBlack: 'volta.png',
+          logoWhite: 'volta_white.png',
           grade: '90/100'
         }
       ];

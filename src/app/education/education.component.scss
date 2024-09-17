@@ -17,12 +17,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3em;
+  padding: 3em 3em 2em 3em;
 }
 
 .steps {
   max-width: 70vw;
   margin: 0 auto;
+}
+
+.container-info{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  padding: 1.1em;
+
+  &:hover {
+    background: var(--background-color);
+    border-radius: .6em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 }
 
 .info {
@@ -46,6 +62,7 @@ body {
     height: 0;
     width: 2px;
     background-color: var(--text-color);
+    margin-top: 1em;
   }
 
   .info {
@@ -75,7 +92,8 @@ body {
 
   &:not(:last-child) {
     &:after {
-      height: 87%;
+      height: 100%;
+      width: 1px;
     }
    
   }
@@ -98,6 +116,8 @@ body {
 
   &.completed {
     background-color: var(--text-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
   svg {
@@ -112,12 +132,12 @@ body {
 }
 
 .custom-spinner {
-  border: 3px solid rgba(255, 255, 255, 0.3); /* Colore del bordo */
-  border-top: 3px solid white; /* Colore della parte superiore */
-  border-radius: 50%; /* Forma circolare */
-  width: 20px; /* Larghezza dello spinner */
-  height: 20px; /* Altezza dello spinner */
-  animation: spin 1s linear infinite; /* Animazione di rotazione */
+  border: 3px solid rgba(255, 255, 255, 0.3); 
+  border-top: 3px solid var(--background-color); 
+  border-radius: 50%; 
+  width: 20px; 
+  height: 20px; 
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
