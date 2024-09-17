@@ -1,9 +1,10 @@
 import { Component, Inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { TranslateService } from '@ngx-translate/core';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -22,8 +23,9 @@ export class AppComponent {
     'it': 'Italiano'
   };
 
-  constructor(@Inject(TranslateService) private translate: TranslateService) {
+  constructor(@Inject(TranslateService) private translate: TranslateService, @Inject(ThemeService) private themeService: ThemeService) {
     this.translate.setDefaultLang(this.selectedLanguage);
+    this.selectedTheme = this.themeService.getTheme();
   }
 
   selectLanguage(language: string) {
@@ -38,5 +40,6 @@ export class AppComponent {
   toggleTheme() {
     this.selectedTheme = this.selectedTheme === 'light' ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', this.selectedTheme);
+    this.themeService.setTheme(this.selectedTheme);
   }
 }
