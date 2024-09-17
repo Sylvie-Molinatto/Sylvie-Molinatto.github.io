@@ -6,6 +6,13 @@
     "CONTACT": "Contatti",
     "MADE_BY": "Realizzato da",
     "HELLO": "Ciao, sono",
-    "DESCRIPTION": "Attualmente sono una studentessa e sto per conseguire la laurea magistrale in Ingegneria Informatica. Sono particolarmente interessata all'ambito software e non vedo l'ora di cominciare il percorso post-laurea!",  
-    "ROLE": "Studentessa magistrale in Ingegneria Informatica"
+    "ROLE": "Studentessa magistrale in Ingegneria Informatica",
+    "DESCRIPTION": "Attualmente sto conseguendo la laurea magistrale in Ingegneria Informatica, dopo aver completato la laurea triennale in Ingegneria Gestionale al Politecnico di Torino. La mia passione risiede nella dinamica intersezione tra tecnologia e gestione, con un particolare interesse per lo sviluppo software e l’innovazione. Mentre lavoro alla mia tesi finale, sono entusiasta delle sfide e delle opportunità che mi aspettano e non vedo l'ora di iniziare il mio percorso professionale nell'industria tecnologica.",
+    
+    "EDU":{
+        "BACHELOR": "Laurea triennale in Ingegneria Gestionale",
+        "MASTER": "Laurea magistrale in Ingegneria Informatica",
+        "HIGH_SCHOOL": "Diploma di maturità scientifica",
+        "PRESENT": "Presente"
+    }
 }

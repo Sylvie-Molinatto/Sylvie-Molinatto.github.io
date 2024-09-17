@@ -6,6 +6,13 @@
     "CONTACT": "Contact",
     "MADE_BY": "Made by",
     "HELLO": "Hello, I'm",
-    "DESCRIPTION": "Actually I am a student about to obtain a master's degree in Computer Engineering. I am particularly interested in the software field and look forward to starting my post-graduation journey!",
-    "ROLE": "MSc Student in Computer Engineering"
+    "ROLE": "MSc Student in Computer Engineering",
+    "DESCRIPTION": "I’m currently pursuing an MSc in Computer Engineering, following a bachelor’s degree in Management Engineering from Politecnico di Torino. My passion lies in the dynamic intersection of technology and management, with a particular focus on software development and innovation. As I work on my final thesis, I’m eager to embrace the challenges and opportunities that lie ahead, and I look forward to beginning my professional journey in the tech industry.",
+    
+    "EDU":{
+        "BACHELOR": "Bachelor's Degree in Management Engineering",
+        "MASTER": "Master's Degree in Computer Engineering",
+        "HIGH_SCHOOL": "High School Diploma in Science",
+        "PRESENT": "Current"
+    }
 }

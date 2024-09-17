@@ -1,0 +1,113 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--background-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    height: 0;
+    width: 2px;
+    background-color: var(--text-color);
+  }
+
+  .info {
+    margin: 2px 0 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 px;
+    color: var(--text-color);
+    bottom: 5px;
+    position: relative;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+
+  .text {
+    font-size: 12px;
+    color: var(--text-color);
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      height: 83%;
+    }
+   
+  }
+}
+
+.number {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--background-color);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background-color);
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 14px;
+
+  &.completed {
+    background-color: var(--text-color);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+
+    path {
+      fill: var(--background-color);
+    }
+  }
+}
+
+.custom-spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3); /* Colore del bordo */
+  border-top: 3px solid white; /* Colore della parte superiore */
+  border-radius: 50%; /* Forma circolare */
+  width: 20px; /* Larghezza dello spinner */
+  height: 20px; /* Altezza dello spinner */
+  animation: spin 1s linear infinite; /* Animazione di rotazione */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
