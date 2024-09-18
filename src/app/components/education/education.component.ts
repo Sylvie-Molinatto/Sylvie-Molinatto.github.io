@@ -41,23 +41,23 @@ export class EducationComponent implements OnInit, OnDestroy {
   }
 
   loadEvents() {
-    this.translate.get(['EDU.MASTER', 'EDU.BACHELOR', 'EDU.HIGH_SCHOOL', 'EDU.PRESENT', 'EDU.BACHELOR_INFO', 'EDU.MASTER_INFO']).subscribe(translations => {
+    this.translate.get(['EDUCATION_SECTION.MASTER', 'EDUCATION_SECTION.BACHELOR', 'EDUCATION_SECTION.HIGH_SCHOOL', 'EDUCATION_SECTION.PRESENT', 'EDUCATION_SECTION.BACHELOR_INFO', 'EDUCATION_SECTION.MASTER_INFO']).subscribe(translations => {
       this.events = [
         {
           startYear: '2022',
-          endYear: translations['EDU.PRESENT'],
-          title: translations['EDU.MASTER'],
+          endYear: translations['EDUCATION_SECTION.PRESENT'],
+          title: translations['EDUCATION_SECTION.MASTER'],
           location: 'Politecnico di Torino',
-          description: translations['EDU.MASTER_INFO'],
+          description: translations['EDUCATION_SECTION.MASTER_INFO'],
           logoBlack: 'polito.png',
           logoWhite: 'polito_white.png',
         },
         {
           startYear: '2019',
           endYear: '2022',
-          title: translations['EDU.BACHELOR'],
+          title: translations['EDUCATION_SECTION.BACHELOR'],
           location: 'Politecnico di Torino',
-          description: translations['EDU.BACHELOR_INFO'],
+          description: translations['EDUCATION_SECTION.BACHELOR_INFO'],
           logoBlack: 'polito.png',
           logoWhite: 'polito_white.png',
           grade: '96/110'
@@ -65,7 +65,7 @@ export class EducationComponent implements OnInit, OnDestroy {
         {
           startYear: '2014',
           endYear: '2019',
-          title: translations['EDU.HIGH_SCHOOL'],
+          title: translations['EDUCATION_SECTION.HIGH_SCHOOL'],
           location: 'Liceo Scientifico Statale A. Volta',
           logoBlack: 'volta.png',
           logoWhite: 'volta_white.png',

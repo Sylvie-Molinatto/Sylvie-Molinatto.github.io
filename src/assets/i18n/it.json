@@ -5,17 +5,26 @@
     "PROJECTS": "Progetti",
     "CONTACT": "Contatti",
     "MADE_BY": "Realizzato da",
-    "HELLO": "Ciao, sono",
-    "ROLE": "Studentessa magistrale in Ingegneria Informatica",
-    "LEARN_MORE": "Vuoi saperne di più sul mio percorso in tecnologia e software? Esplora liberamente!",
-    "DESCRIPTION": "Attualmente sto conseguendo la laurea magistrale in Ingegneria Informatica, dopo aver completato la laurea triennale in Ingegneria Gestionale al Politecnico di Torino. La mia passione risiede nella dinamica intersezione tra tecnologia e gestione, con un particolare interesse per lo sviluppo software e l’innovazione. Mentre lavoro alla mia tesi finale, sono entusiasta delle sfide e delle opportunità che mi aspettano e non vedo l'ora di iniziare il mio percorso professionale nell'industria tecnologica.",
     
-    "EDU":{
+    "HOME_SECTION":{
+        "ROLE": "Studentessa magistrale in Ingegneria Informatica",
+        "LEARN_MORE": "Vuoi saperne di più sul mio percorso in tecnologia e software? Esplora liberamente!"
+    },
+
+    "ABOUT_SECTION": {
+        "DESCRIPTION": "Attualmente sto conseguendo la laurea magistrale in Ingegneria Informatica, dopo aver completato la laurea triennale in Ingegneria Gestionale al Politecnico di Torino. La mia passione risiede nella dinamica intersezione tra tecnologia e gestione, con un particolare interesse per lo sviluppo software e l’innovazione. Mentre lavoro alla mia tesi finale, sono entusiasta delle sfide e delle opportunità che mi aspettano e non vedo l'ora di iniziare il mio percorso professionale nell'industria tecnologica."
+    },
+
+    "EDUCATION_SECTION":{
         "BACHELOR": "Laurea triennale in Ingegneria Gestionale",
         "MASTER": "Laurea magistrale in Ingegneria Informatica",
         "HIGH_SCHOOL": "Diploma di maturità scientifica",
         "PRESENT": "Presente",
         "BACHELOR_INFO": "Ho frequentato la laurea triennale in Ingegneria Gestionale (L-8, Ingegneria dell'informazione) presso il Politecnico di Torino.",
         "MASTER_INFO": "Attualmente sto conseguendo la laurea magistrale in Ingegneria Informatica (orientamento Software) presso il Politecnico di Torino."
+    },
+
+    "CONTACT_SECTION": {
+        "REACH_ME": "Puoi contattarmi con questo modulo!"
     }
 }
