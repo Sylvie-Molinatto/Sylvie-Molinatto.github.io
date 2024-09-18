@@ -1,6 +1,44 @@
-.title{
+.title {
     margin-bottom: 1em;
 }
-.form-group{
+
+.form-group {
     margin-bottom: 1em;
+}
+
+.form-control {
+    margin-top: .5em;
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+}
+
+.custom {
+    &:hover {
+        transform: scale(1.09);
+    }
+}
+
+#emailPrivacy{
+    color: grey;
+}
+
+::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
 }

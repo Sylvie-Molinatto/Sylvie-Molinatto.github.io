@@ -13,6 +13,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 })
 export class ContactComponent implements OnInit, OnDestroy {
   formData: any;
+  placeholders: any = {};
   private langChangeSubscription: Subscription | null = null; 
 
   constructor(private builder: UntypedFormBuilder, private translate: TranslateService) { }
@@ -39,19 +40,11 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   private updatePlaceholders() {
     this.translate.get(['CONTACT_SECTION.ENTER_FULL_NAME', 'CONTACT_SECTION.ENTER_EMAIL', 'CONTACT_SECTION.ENTER_MESSAGE']).subscribe(translations => {
-      const nameInput = document.getElementById('fullname') as HTMLInputElement;
-      const emailInput = document.getElementById('email') as HTMLInputElement;
-      const messageInput = document.getElementById('message') as HTMLTextAreaElement;
-
-      if (nameInput) {
-        nameInput.placeholder = translations['CONTACT_SECTION.ENTER_FULL_NAME'];
-      }
-      if (emailInput) {
-        emailInput.placeholder = translations['CONTACT_SECTION.ENTER_EMAIL'];
-      }
-      if (messageInput) {
-        messageInput.placeholder = translations['CONTACT_SECTION.ENTER_MESSAGE'];
-      }
+      this.placeholders = {
+        name: translations['CONTACT_SECTION.ENTER_FULL_NAME'],
+        email: translations['CONTACT_SECTION.ENTER_EMAIL'],
+        message: translations['CONTACT_SECTION.ENTER_MESSAGE']
+      };
     });
   }
 
