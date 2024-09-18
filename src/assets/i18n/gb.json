@@ -25,6 +25,14 @@
     },
 
     "CONTACT_SECTION": {
-        "REACH_ME": "You can reach me with this form!"
+        "REACH_ME": "You can reach me with this form!",
+        "YOUR_FULL_NAME": "Your full name",
+        "ENTER_FULL_NAME": "Enter full name",
+        "YOUR_EMAIL": "Your email",
+        "ENTER_EMAIL": "Enter email",
+        "PRIVACY": "I'll never share your email with anyone else.",
+        "YOUR_MESSAGE": "Your message",
+        "ENTER_MESSAGE": "Enter message",
+        "SEND": "Send"
     }
 }
