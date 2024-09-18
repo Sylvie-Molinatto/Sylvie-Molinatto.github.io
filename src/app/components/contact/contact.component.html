@@ -1,21 +1,28 @@
-<div class="container">
-  <h4 class="text-center title">{{ 'CONTACT_SECTION.REACH_ME' | translate }}</h4>
-  <div>
-    <form (ngSubmit)="onSubmit()" [formGroup]="formData">
-      <div class="form-group">
-        <label for="fullname">{{ 'CONTACT_SECTION.YOUR_FULL_NAME' | translate }}</label>
-        <input type="text" id="fullname" formControlName="name" class="form-control" name="Fullname" [attr.placeholder]="placeholders.name" required>
+<h4 class="text-center title">{{ 'CONTACT_SECTION.REACH_ME' | translate }}</h4>
+<div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="formData">
+    <div class="form-group">
+      <label for="fullname">{{ 'CONTACT_SECTION.YOUR_FULL_NAME' | translate }}</label>
+      <input type="text" id="fullname" formControlName="name" class="form-control" name="Fullname" [attr.placeholder]="placeholders.name" required>
+      <div *ngIf="isFieldInvalid('name')" class="text-danger">
+        {{ 'CONTACT_SECTION.ERROR_FULL_NAME' | translate }}
       </div>
-      <div class="form-group">
-        <label for="email">{{ 'CONTACT_SECTION.YOUR_EMAIL' | translate }}</label>
-        <input type="email" id="email" formControlName="email" class="form-control" name="Email" aria-describedby="emailHelp" [attr.placeholder]="placeholders.email" required>
-        <small id="emailPrivacy" class="form-text">{{ 'CONTACT_SECTION.PRIVACY' | translate }}</small>
+    </div>
+    <div class="form-group">
+      <label for="email">{{ 'CONTACT_SECTION.YOUR_EMAIL' | translate }}</label>
+      <input type="email" id="email" formControlName="email" class="form-control" name="Email" aria-describedby="emailHelp" [attr.placeholder]="placeholders.email" required>
+      <div *ngIf="isFieldInvalid('email')" class="text-danger">
+        {{ 'CONTACT_SECTION.ERROR_EMAIL' | translate }}
       </div>
-      <div class="form-group">
-        <label for="message">{{ 'CONTACT_SECTION.YOUR_MESSAGE' | translate }}</label>
-        <textarea id="message" formControlName="message" class="form-control" name="Message" minlength="25" [attr.placeholder]="placeholders.message" required></textarea>
+      <small id="emailPrivacy" class="form-text">{{ 'CONTACT_SECTION.PRIVACY' | translate }}</small>
+    </div>
+    <div class="form-group">
+      <label for="message">{{ 'CONTACT_SECTION.YOUR_MESSAGE' | translate }}</label>
+      <textarea id="message" formControlName="message" class="form-control" name="Message" minlength="25" [attr.placeholder]="placeholders.message" required></textarea>
+      <div *ngIf="isFieldInvalid('message')" class="text-danger">
+        {{ 'CONTACT_SECTION.ERROR_MESSAGE' | translate }}
       </div>
-      <button type="submit" class="btn btn-outline-secondary custom" [disabled]="formData.invalid">{{ 'CONTACT_SECTION.SEND' | translate }}</button>
-    </form>
-  </div>
+    </div>
+    <button type="submit" class="btn btn-outline-secondary custom">{{ 'CONTACT_SECTION.SEND' | translate }}</button>
+  </form>
 </div>

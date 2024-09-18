@@ -11,6 +11,10 @@
     color: var(--text-color);
     background-color: var(--background-color);
 
+    &:focus{
+        border-color: var(--salmon-pink);
+        box-shadow: 0 0 0 0.2rem rgba(250, 137, 147, 0.25);
+    }
 }
 
 .custom {

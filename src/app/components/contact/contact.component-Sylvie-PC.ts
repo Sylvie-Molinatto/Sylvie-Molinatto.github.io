@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CommonModule, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { UntypedFormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { TranslateService, LangChangeEvent, TranslateModule } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -8,7 +8,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, TranslateModule],
+  imports: [ReactiveFormsModule, TranslateModule, NgIf],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
@@ -23,7 +23,7 @@ export class ContactComponent implements OnInit, OnDestroy {
     this.formData = this.builder.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', [Validators.required]]
+      message: ['', [Validators.required, Validators.minLength(25)]]
     });
 
     this.langChangeSubscription = this.translate.onLangChange.subscribe((event: LangChangeEvent) => {

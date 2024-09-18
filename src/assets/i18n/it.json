@@ -26,13 +26,16 @@
 
     "CONTACT_SECTION": {
         "REACH_ME": "Puoi contattarmi con questo modulo!",
-        "YOUR_FULL_NAME": "Il tuo nome completo", 
-        "ENTER_FULL_NAME": "Inserisci il nome completo",
+        "YOUR_FULL_NAME": "Il tuo nome", 
+        "ENTER_FULL_NAME": "Inserisci il nome",
+        "ERROR_FULL_NAME": "Il nome è obbligatorio",   
         "YOUR_EMAIL": "La tua email",
         "ENTER_EMAIL": "Inserisci l'email",
+        "ERROR_EMAIL": "Email non valida",
         "PRIVACY": "Non condividerò mai la tua email con nessun altro.",
         "YOUR_MESSAGE": "Il tuo messaggio",
         "ENTER_MESSAGE": "Inserisci il messaggio",
-        "SEND": "Invia"  
+        "ERROR_MESSAGE": "Il messaggio è obbligatorio",
+        "SEND": "Invia messaggio"  
     }
 }

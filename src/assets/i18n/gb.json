@@ -28,11 +28,14 @@
         "REACH_ME": "You can reach me with this form!",
         "YOUR_FULL_NAME": "Your full name",
         "ENTER_FULL_NAME": "Enter full name",
+        "ERROR_FULL_NAME": "Full name is required",
         "YOUR_EMAIL": "Your email",
         "ENTER_EMAIL": "Enter email",
+        "ERROR_EMAIL": "Email is invalid",
         "PRIVACY": "I'll never share your email with anyone else.",
         "YOUR_MESSAGE": "Your message",
         "ENTER_MESSAGE": "Enter message",
-        "SEND": "Send"
+        "ERROR_MESSAGE": "Message is required",
+        "SEND": "Send message"
     }
 }
