@@ -1,0 +1,61 @@
+@use '@angular/material' as mat;
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.example-card {
+    flex: 1 1 calc(33% - 2em);
+    max-width: 500px;
+    height: 600px;
+    background-color: var(--surface-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding-bottom: 1em;
+}
+
+.card-content{
+    flex-grow: 1;
+}
+
+.mat-mdc-card-header,
+.mat-mdc-card-content {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 15px;
+}
+
+.mat-mdc-card-title {
+    font-weight: 400;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 0.3em 0.6em;
+    margin: 0.2em;
+    border-radius: 4px;
+    font-size: 0.875em;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.5em;
+}
+
+.custom{
+    &:hover{
+      transform: scale(1.09);
+    }
+}
+
+.button-link{
+    text-decoration: none;
+    color: var(--text-color);
+}

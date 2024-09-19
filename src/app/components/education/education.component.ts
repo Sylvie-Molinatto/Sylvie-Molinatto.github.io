@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit, OnDestroy } from '@angular/core';
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ThemeService } from '../../services/theme.service';
 import { Subscription } from 'rxjs';
@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [CommonModule, TranslateModule, NgIf],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss'],
 })
@@ -41,7 +41,14 @@ export class EducationComponent implements OnInit, OnDestroy {
   }
 
   loadEvents() {
-    this.translate.get(['EDUCATION_SECTION.MASTER', 'EDUCATION_SECTION.BACHELOR', 'EDUCATION_SECTION.HIGH_SCHOOL', 'EDUCATION_SECTION.PRESENT', 'EDUCATION_SECTION.BACHELOR_INFO', 'EDUCATION_SECTION.MASTER_INFO']).subscribe(translations => {
+    this.translate.get([
+      'EDUCATION_SECTION.MASTER', 
+      'EDUCATION_SECTION.BACHELOR', 
+      'EDUCATION_SECTION.HIGH_SCHOOL', 
+      'EDUCATION_SECTION.PRESENT', 
+      'EDUCATION_SECTION.BACHELOR_INFO', 
+      'EDUCATION_SECTION.MASTER_INFO'
+    ]).subscribe(translations => {
       this.events = [
         {
           startYear: '2022',
@@ -49,8 +56,8 @@ export class EducationComponent implements OnInit, OnDestroy {
           title: translations['EDUCATION_SECTION.MASTER'],
           location: 'Politecnico di Torino',
           description: translations['EDUCATION_SECTION.MASTER_INFO'],
-          logoBlack: 'polito.png',
-          logoWhite: 'polito_white.png',
+          logoBlack: 'logos/polito.png',
+          logoWhite: 'logos/polito_white.png',
         },
         {
           startYear: '2019',
@@ -58,8 +65,8 @@ export class EducationComponent implements OnInit, OnDestroy {
           title: translations['EDUCATION_SECTION.BACHELOR'],
           location: 'Politecnico di Torino',
           description: translations['EDUCATION_SECTION.BACHELOR_INFO'],
-          logoBlack: 'polito.png',
-          logoWhite: 'polito_white.png',
+          logoBlack: 'logos/polito.png',
+          logoWhite: 'logos/polito_white.png',
           grade: '96/110'
         },
         {
@@ -67,8 +74,8 @@ export class EducationComponent implements OnInit, OnDestroy {
           endYear: '2019',
           title: translations['EDUCATION_SECTION.HIGH_SCHOOL'],
           location: 'Liceo Scientifico Statale A. Volta',
-          logoBlack: 'volta.png',
-          logoWhite: 'volta_white.png',
+          logoBlack: 'logos/volta.png',
+          logoWhite: 'logos/volta_white.png',
           grade: '90/100'
         }
       ];

@@ -37,5 +37,13 @@
         "ENTER_MESSAGE": "Inserisci il messaggio",
         "ERROR_MESSAGE": "Il messaggio è obbligatorio",
         "SEND": "Invia messaggio"  
+    },
+
+    "PROJECTS_SECTION":{
+        "PORTFOLIO_DESCRIPTION": "Applicazione web responsive che mostra i miei progetti, competenze ed esperienze.",
+        "TEAMHUB_DESCRIPTION": "Applicazione mobile progettata per facilitare il lavoro di squadra fornendo funzionalità per la gestione dei task, la collaborazione dei team e il monitoraggio delle prestazioni.",
+        "TMS_DESCRIPTION": "Applicazione web che consente agli studenti di gestire i loro progetti di tesi, ai docenti di supervisionarli e agli impiegati della segreteria di monitorare il processo.",
+        "URBANHUB_DESCRIPTION": "Prototipo di applicazione web ad alta fedeltà mirato ad ottimizzare il processo di pianificazione dei viaggi utilizzando un'assistenza AI simulata. Offre agli utenti suggerimenti di percorso personalizzati, raccomandazioni di attrazioni e opzioni di trasporto.",
+        "VIEW_PROJECT": "Visualizza Progetto"
     }
 }

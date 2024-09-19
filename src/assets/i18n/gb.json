@@ -37,5 +37,13 @@
         "ENTER_MESSAGE": "Enter message",
         "ERROR_MESSAGE": "Message is required",
         "SEND": "Send message"
+    },
+
+    "PROJECTS_SECTION":{
+        "PORTFOLIO_DESCRIPTION": "A responsive web application that showcases my projects, skills, and experiences." ,
+        "TEAMHUB_DESCRIPTION": "A mobile application designed to facilitate effective teamwork by providing features for task management, team collaboration, and performance tracking.",
+        "TMS_DESCRIPTION": "A web application that allows students to manage their thesis projects, teachers to supervise them and secretary clerks to monitor the process.",
+        "URBANHUB_DESCRIPTION": "A high-fidelity web application prototype aimed at optimizing the trip planning process using a simulated AI assistance. It offers users personalized route suggestions, attraction recommendations, and transportation options.",
+        "VIEW_PROJECT": "View Project"
     }
 }

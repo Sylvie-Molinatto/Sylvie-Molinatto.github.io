@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { UntypedFormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { TranslateService, LangChangeEvent, TranslateModule } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';

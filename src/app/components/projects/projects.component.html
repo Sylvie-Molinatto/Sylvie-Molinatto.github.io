@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<div class="container">
+  <div *ngFor="let project of projects">
+    <mat-card class="example-card">
+      <img mat-card-image [src]="project.image" [alt]="project.title" alt="Image">
+      <mat-card-header>
+        <mat-card-title>{{ project.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="card-content">
+        <p>{{ project.description }}</p>
+        <div class="tags">
+          <span *ngFor="let keyword of project.keywords" class="tag">{{ keyword }}</span>
+        </div>
+      </mat-card-content>
+      <mat-card-footer class="card-footer">
+        <mat-card-actions class="card-actions">
+          <a class="btn btn-outline-secondary custom" [href]="project.link" target="_blank">
+            <span> {{ 'PROJECTS_SECTION.VIEW_PROJECT' | translate }} </span>
+          </a>
+        </mat-card-actions>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>
