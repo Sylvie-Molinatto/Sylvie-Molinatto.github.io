@@ -1,5 +1,3 @@
-@use '@angular/material' as mat;
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -12,13 +10,15 @@
 .example-card {
     flex: 1 1 calc(33% - 2em);
     max-width: 500px;
-    height: 600px;
     background-color: var(--surface-color);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.card-content{
+.card-content {
     flex-grow: 1;
 }
 
@@ -31,6 +31,20 @@
 
 .mat-mdc-card-title {
     font-weight: 400;
+}
+
+.example-header-image {
+    background-size: cover;
+}
+
+img[mat-card-image] {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+
+.tags {
+    margin-top: 1em;
 }
 
 .tag {
@@ -49,13 +63,30 @@
     padding-right: 1.5em;
 }
 
-.custom{
-    &:hover{
-      transform: scale(1.09);
+.custom {
+    &:hover {
+        transform: scale(1.09);
     }
 }
 
-.button-link{
+.button-link {
     text-decoration: none;
     color: var(--text-color);
+}
+
+/* Media queries per rendere le card responsive */
+@media (max-width: 1200px) {
+    .example-card {
+        flex: 1 1 calc(50% - 2em);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2em;
+    }
+
+    .example-card {
+        flex: 1 1 calc(100% - 2em);
+    }
 }

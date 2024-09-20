@@ -13,7 +13,7 @@
 }
 
 .nav-link.active {
-    color: var(--old-rose);
+    color: var(--old-rose) !important;
 }
 
 .navbar-toggler:focus {
@@ -52,10 +52,15 @@
     color: var(--background-color);
 }
 
+.offcanvas {
+    max-width: 50vw;
+    min-width: 0;
+}
+
 .offcanvas-header {
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: "Montserrat", system-ui;;
+    font-family: "Montserrat", system-ui;
 }
 
 .offcanvas-body {
@@ -70,7 +75,7 @@
     --bs-btn-close-bg: var(--background-color);
 }
 
-.custom-close-btn{
+.custom-close-btn {
     padding-bottom: 22px;
     padding-right: 20px;
 
@@ -80,26 +85,26 @@
 }
 
 .custom-toggler {
-    border: none; 
+    border: none;
     background-color: transparent;
-    padding: 0; 
+    padding: 0;
 
     .bi-list {
-        color: var(--text-color); 
-        width: 30px; 
-        height: 30px; 
+        color: var(--text-color);
+        width: 30px;
+        height: 30px;
     }
 
     &:focus {
-        outline: none; 
+        outline: none;
         box-shadow: none;
     }
 
     &:active {
         outline: none;
         box-shadow: none;
-    } 
-    
+    }
+
     &:hover {
         transform: scale(1.09);
     }

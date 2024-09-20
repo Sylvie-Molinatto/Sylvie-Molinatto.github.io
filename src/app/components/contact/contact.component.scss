@@ -59,3 +59,10 @@
     color: var(--placeholder-color);
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .card{
+        padding: 2em;
+        margin: 2em;
+    }
+}

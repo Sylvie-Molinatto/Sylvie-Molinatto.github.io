@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { NgbOffcanvasModule, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
   imports: [CommonModule, NgbDropdownModule, TranslateModule, RouterModule, NgbOffcanvasModule],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class NavbarComponent{
   @Input() selectedLanguage!: string;
