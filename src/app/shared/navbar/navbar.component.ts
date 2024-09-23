@@ -1,11 +1,8 @@
-import { Component, Input, inject, TemplateRef } from '@angular/core';
-import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { Component, Input, inject, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
-import { NgbOffcanvasModule, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
-import { ViewEncapsulation } from '@angular/core';
-
+import { NgbDropdownModule, NgbOffcanvasModule, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-navbar',
   standalone: true,
