@@ -1,14 +1,5 @@
-.container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 3em;
-}
-
-.container>* {
-  margin-left: 3em;
-  margin-right: 3em;
-}
+@import '../../../styles/container-styles.scss';
+@import '../../../styles/img-styles.scss';
 
 .left-side{
   height: auto;
@@ -24,12 +15,10 @@
   justify-content: end;
 }
 
-.profile_img {
-  max-width: 25em; 
-}
-
-.profile_img:hover{
-  transform: scale(1.1);
+.img {
+  &:hover {
+    transform: scale(1.09);
+  }
 }
 
 .description {
@@ -80,19 +69,9 @@
 
 /* Stili per la disposizione verticale su schermi piccoli */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 3em 1em 2em 1em;
-  }
-
-  .profile_img {
+  .img {
     padding-top: 3em;
     padding-bottom: 2em;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 
   .social-icons-container {

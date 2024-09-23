@@ -1,3 +1,6 @@
+@import '../../../styles.scss';
+@import '../../../styles/img-styles.scss';
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -11,11 +14,12 @@
     flex: 1 1 calc(33% - 2em);
     max-width: 500px;
     background-color: var(--surface-color);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: .5em;
     padding-bottom: 1em;
     display: flex;
     flex-direction: column;
     height: 100%;
+    @include box-shadow;
 }
 
 .card-content {
@@ -36,12 +40,6 @@
 .example-header-image {
     background-size: cover;
 }
-
-img[mat-card-image] {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
 
 .tags {
     margin-top: 1em;
@@ -83,7 +81,7 @@ img[mat-card-image] {
 
 @media (max-width: 768px) {
     .container {
-        padding: 2em;
+        padding: 3em 2em 3em 2em;
     }
 
     .example-card {

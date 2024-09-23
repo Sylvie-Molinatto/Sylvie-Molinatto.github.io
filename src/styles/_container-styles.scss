@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.container>* {
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 3em 1em 2em 1em;
+    }
+}  

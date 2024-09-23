@@ -1,0 +1,20 @@
+@import '../styles.scss';
+
+.card{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+    margin: 3em;
+    border-radius: .5em;
+    max-width: 60em;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    @include box-shadow;
+}
+
+@media (max-width: 768px) {
+    .card{
+        padding: 2em;
+        margin: 2em;
+    }
+}

@@ -1,15 +1,4 @@
-.card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5em;
-    margin: 5em;
-    border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 60em;
-    background-color: var(--surface-color);
-    color: var(--text-color);
-}
+@import '../../../styles/card-styles.scss';
 
 .description {
     margin-bottom: 1em;
@@ -18,13 +7,6 @@
 .custom{
     &:hover{
       transform: scale(1.09);
-    }
-}
-
-@media (max-width: 768px) {
-    .card{
-        padding: 2em;
-        margin: 2em;
     }
 }
   
