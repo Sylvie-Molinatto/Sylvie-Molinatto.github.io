@@ -26,7 +26,7 @@
 }
 
 .role {
-  color: var(--salmon-pink);
+  color: var(--primary-color);
   font-weight: normal;
 }
 
@@ -56,9 +56,9 @@
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
-  fill: var(--salmon-pink);
+  fill: var(--primary-color);
   background: var(--background-color);
-  border: 1px solid var(--salmon-pink);
+  border: 1px solid var(--primary-color);
   transition: var(--background-color) 0.15s ease-in-out;
   margin-right: .5em;
 

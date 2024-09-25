@@ -3,9 +3,15 @@
     color: var(--text-color);
 }
 
-.link {
+.logo {
+    padding-right: .5em;
+}
+
+.name-link {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
     cursor: pointer;
-    padding-right: 1.7em;
 }
 
 .nav-link {
@@ -14,11 +20,11 @@
 }
 
 .nav-link:hover {
-    color: var(--old-rose);
+    color: var(--primary-color);
 }
 
 .nav-link.active {
-    color: var(--old-rose) !important;
+    color: var(--primary-color) !important;
 }
 
 .navbar-toggler:focus {
@@ -35,7 +41,7 @@
     padding: 12px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
-    color: var(--secondary-color);
+    color: var(--text-color);
     background-color: var(--background-color);
     display: flex;
     align-items: center;

@@ -2,9 +2,12 @@
   <div class="container-fluid">
     <!-- Contenitore per menu e selettore della lingua -->
     <div class="d-flex flex-grow-1 align-items-center justify-content-between">
-      <h1 [routerLink]="['']" class="link">
-        SYLVIE
-      </h1>
+      <div class="d-flex align-items-center">
+        <img [routerLink]="['']" src="personal_logo.png" alt="Logo" class="logo" width="50">
+        <h2 [routerLink]="['']" class="name-link">
+          Sylvie
+        </h2>
+      </div>
       <!-- Menu di navigazione per schermi grandi -->
       <div class="d-none d-lg-block flex-grow-1">
         <ul class="navbar-nav d-flex justify-content-center">

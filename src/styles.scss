@@ -15,32 +15,42 @@ $theme: mat.define-theme((
   )
 ));
 
-/* Coolors Exported Palette - https://coolors.co/faf0f1-fa8993-5c3d3f-454142-ad6f74 */
+// Globar variables
+$background-color-light: #F7F7F8;
+$background-color-dark: #3B383E;
+$surface-color-light: darken($background-color-light, 2%);
+$surface-color-dark: lighten($background-color-dark, 5%);
+$text-color-light: #000000;
+$text-color-dark: #FFFFFF;
+$primary-color: #FA8993;
+$secondary-color: #AD6F74;
+$tertiary-color: #5C3D3F;
+$error-color: #F44336;
+$placeholder-color: #AEAEAE;
+
+
 :root {
   @include mat.all-component-themes($theme);
-  --lavender-blush: #FAF0F1;
-  --salmon-pink: #FA8993;
-  --rose-ebony: #5C3D3F;
-  --jet: #454142;
-  --old-rose: #AD6F74;
-
-  --primary-color: #ffffff;
-  --secondary-color: #000000;
-  --background-color: #F7F7F8;
-  --surface-color: #ffffff;
-  --text-color: #000000;
-
-  --placeholder-color: #aeaeae; 
-  --error-color: #f44336;
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --background-color: #{$background-color-light};
+  --surface-color: #{$surface-color-light};
+  --text-color: #{$text-color-light};
+  --placeholder-color: #{$placeholder-color}; 
+  --error-color: #{$error-color};
 }
 
 /* Tema scuro */
 [data-theme="dark"] {
-  --primary-color: #343a40;
-  --secondary-color: #ffffff;
-  --background-color: var(--jet);
-  --text-color: #ffffff;
-  --surface-color: #554F50;
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --background-color: #{$background-color-dark};
+  --surface-color: #{$surface-color-dark};
+  --text-color: #{$text-color-dark};
+  --placeholder-color: #{$placeholder-color};
+  --error-color: #{$error-color};
 }
 
 /* Mixin per ombre */
@@ -77,6 +87,11 @@ header {
 p {
   margin: 0;
   padding: 0.5rem 0;
+}
+
+/* Stili per i titoli */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: .5rem;
 }
 
 /* Stili per la navbar */
