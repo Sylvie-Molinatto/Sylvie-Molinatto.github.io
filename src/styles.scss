@@ -14,16 +14,10 @@ $theme: mat.define-theme((
     scale: -1
   )
 ));
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+
+/* Coolors Exported Palette - https://coolors.co/faf0f1-fa8993-5c3d3f-454142-ad6f74 */
 :root {
   @include mat.all-component-themes($theme);
-}
-/* Coolors Exported Palette - https://coolors.co/faf0f1-fa8993-5c3d3f-454142-ad6f74 */
-
-/* Variabili di colore */
-:root {
   --lavender-blush: #FAF0F1;
   --salmon-pink: #FA8993;
   --rose-ebony: #5C3D3F;
