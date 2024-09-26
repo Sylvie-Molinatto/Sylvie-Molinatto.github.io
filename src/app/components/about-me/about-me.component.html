@@ -1,7 +1,7 @@
 <section>
   <div class="content">
-    <div class="title">
-      <h2> About Me </h2>
+    <div class="title container">
+      <h2> {{ 'ABOUT_ME' | translate }} </h2>
     </div>
     <div class="container">
       <div class="left-side">
@@ -14,19 +14,20 @@
       </div>
       <div class="separator"></div>
       <div class="right-side">
-        <div>
-          <label class="bold"> {{'ABOUT_SECTION.NAME' | translate }}:</label> <span class="right-align"> Sylvie Molinatto </span>
+        <div class="info-row">
+          <label class="bold"> {{'ABOUT_SECTION.NAME' | translate }}:</label> <span> Sylvie Molinatto </span>
         </div>
-        <div>
+        <div class="info-row">
           <label class="bold"> {{'ABOUT_SECTION.DATE_OF_BIRTH' | translate }}:</label> <span> 06/12/2000 </span>
         </div>
-        <div>
+        <div class="info-row">
           <label class="bold"> Email:</label> <span> sylvie.molinatto00&#64;gmail.com </span>
         </div>
-        <div>
+        <div class="info-row">
           <label class="bold"> {{ 'ABOUT_SECTION.FROM' | translate }}:</label> <span> Condove (TO), Italy </span>
         </div>
       </div>
     </div>
+    <app-skills></app-skills>
 </div>
 </section>

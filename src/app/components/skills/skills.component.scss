@@ -1,0 +1,155 @@
+.skills-section {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+@keyframes slide {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: transparent;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+}
+
+.logos-slide {
+    display: flex;
+    animation: 40s slide infinite linear;
+}
+
+.skill {
+    height: 135px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin: 0px 10px;
+    position: relative;
+    box-shadow: 2px 2px 5px var(--primary-color);
+    transition: height 0.3s, width 0.3s;
+}
+
+.skill:hover {
+    height: 145px;
+    width: 165px;
+    border: 1px solid var(--primary-color);
+    transform: scaleY(1.05);
+    transform-origin: bottom;
+
+    .gradient {
+        display: none;
+    }
+}
+
+
+.gradient {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    width: 80%;
+    background-image: radial-gradient(circle, var(--primary-color) 0%, var(--tertiary-color) 100%);
+}
+
+.logos-slide div img {
+    margin: auto;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+}
+
+.logos::after {
+    right: 0;
+}
+
+.skill img {
+    height: 60px;
+    width: 60px;
+}
+
+.pills {
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.line {
+    background: var(--primary-color);
+    height: 2px;
+    width: 20%;
+    margin: -25px auto 0;
+}
+
+.blur {
+    width: 5vw;
+    height: 5vw;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(5vw);
+    margin-top: 10px;
+}
+
+
+@media (min-width: 320px) and (max-width:767.98px) {
+    .blur {
+        width: 60vw;
+        filter: blur(20vw);
+    }
+
+    .line {
+        width: 80%;
+    }
+
+   .skill {
+       height: 115px;
+       width: 140px;
+
+       :is(img){
+        padding: 5px;
+       }
+   }
+
+    .logos:before,
+    .logos:after {
+        background: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {}

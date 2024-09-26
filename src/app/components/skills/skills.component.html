@@ -1,0 +1,29 @@
+<div class="skills-section">
+    <div class="container">
+        <div class="row text-center py-3">
+            <div class="col-sm-12">
+                <div class="blur"></div>
+                <span class="pills">Skills</span>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="h-100 m-auto py-4">
+            <div class="row align-items-center">
+                <div class="logos">
+                    <div class="logos-slide">
+                        <div class="skill" *ngFor="let skill of skills">
+                            <img [src]="skill.image" />
+                            <p>{{skill.name}}</p>
+                        </div>
+                    </div>
+                    <div class="logos-slide">
+                        <div class="skill" *ngFor="let skill of skills">
+                            <img [src]="skill.image" />
+                            <p>{{skill.name}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
