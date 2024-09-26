@@ -13,6 +13,17 @@
   margin-top: auto;
   margin-bottom: auto;
   justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.right-side div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 
 .img {

@@ -1,5 +1,83 @@
-@import '../../../styles/card-styles.scss';
+.title {
+    font-weight: bold;
+    padding-left: 2em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.left-side,
+.right-side {
+    flex-grow: 0;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.separator {
+    width: .5px;
+    background-color: var(--placeholder-color);
+    height: 90%;
+    align-self: center;
+}
 
 .description {
     margin-bottom: 1em;
+}
+
+.bold {
+    font-weight: bold;
+    padding-right: 2em;
+}
+
+.right-align {
+    margin-left: auto;
+}
+
+.container>* {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+@media (max-width: 768px) {
+    .content{
+        padding: 2em 1em 2em 1em;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .container {
+        display: contents;
+        height: auto;
+        padding: 1em 3em 1em 3em;
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .right-side {
+        padding: 0;
+    }
+
+    .separator {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        width: auto;
+        height: .5px;
+    }
 }

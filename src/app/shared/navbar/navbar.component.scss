@@ -12,6 +12,7 @@
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
+    padding-right: 2.2em;
 }
 
 .nav-link {
@@ -38,7 +39,7 @@
 .theme-switcher {
     min-width: auto;
     max-width: min-content;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
     color: var(--text-color);
