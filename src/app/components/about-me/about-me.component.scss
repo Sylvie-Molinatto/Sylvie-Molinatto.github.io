@@ -58,10 +58,18 @@
     .container {
         display: block;
         text-align: center;
+        padding: 0;
     }
 
-    .right-side, .left-side {
-        margin: 0;
-        padding: 0;
+    .right-side {
+        margin-top: 1em;
+        padding-top: 1em;
+        margin-left: 0;
+    }
+
+    .left-side {
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        margin-right: 0;
     }
 }

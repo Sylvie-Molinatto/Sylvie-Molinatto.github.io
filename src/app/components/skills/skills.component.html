@@ -12,13 +12,13 @@
                 <div class="logos">
                     <div class="logos-slide">
                         <div class="skill" *ngFor="let skill of skills">
-                            <img [src]="skill.image" alt="Image"/>
+                            <img [src]="skill.image" [alt]="skill.name" title="{{skill.name}}"/>
                             <p>{{skill.name}}</p>
                         </div>
                     </div>
                     <div class="logos-slide">
                         <div class="skill" *ngFor="let skill of skills">
-                            <img [src]="skill.image" alt="Image"/>
+                            <img [src]="skill.image" [alt]="skill.name" title="{{skill.name}}"/>
                             <p>{{skill.name}}</p>
                         </div>
                     </div>
