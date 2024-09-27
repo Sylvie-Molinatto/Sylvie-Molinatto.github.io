@@ -19,7 +19,13 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
     @include box-shadow;
+}
+
+.example-card img:hover {
+    transform: scale(1.09);
+    transition: transform 0.5s ease;
 }
 
 .card-content {

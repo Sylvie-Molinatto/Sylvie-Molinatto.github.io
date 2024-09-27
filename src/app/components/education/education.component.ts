@@ -16,7 +16,7 @@ export class EducationComponent implements OnInit, OnDestroy {
   events: Array<any>;
   private themeSubscription: Subscription | null = null;
 
-  constructor(private translate: TranslateService, @Inject(ThemeService) private themeService: ThemeService) {
+  constructor(private readonly translate: TranslateService, @Inject(ThemeService) private readonly themeService: ThemeService) {
     this.events = new Array();
     this.loadEvents();
 

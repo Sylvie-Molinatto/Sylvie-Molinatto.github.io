@@ -23,7 +23,7 @@ interface Project {
 export class ProjectsComponent {
   projects: Array<Project>;
 
-  constructor(private translate: TranslateService) {
+  constructor(private readonly translate: TranslateService) {
     this.projects = new Array();
     this.loadProjects();
     // Subscribe to language change events

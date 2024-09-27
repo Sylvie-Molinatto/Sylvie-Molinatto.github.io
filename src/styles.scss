@@ -18,7 +18,7 @@ $theme: mat.define-theme((
 // Globar variables
 $background-color-light: #F7F7F8;
 $background-color-dark: #3B383E;
-$surface-color-light: darken($background-color-light, 2%);
+$surface-color-light: white;
 $surface-color-dark: lighten($background-color-dark, 5%);
 $text-color-light: #000000;
 $text-color-dark: #FFFFFF;

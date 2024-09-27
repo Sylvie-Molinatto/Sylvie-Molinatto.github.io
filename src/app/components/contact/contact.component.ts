@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   placeholders: any = {};
   private langChangeSubscription: Subscription | null = null; 
 
-  constructor(private builder: UntypedFormBuilder, private translate: TranslateService) { }
+  constructor(private readonly builder: UntypedFormBuilder, private readonly translate: TranslateService) { }
 
   ngOnInit() {
     this.formData = this.builder.group({

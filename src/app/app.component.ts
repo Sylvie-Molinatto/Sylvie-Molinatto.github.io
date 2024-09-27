@@ -23,7 +23,7 @@ export class AppComponent {
     'it': 'Italiano'
   };
 
-  constructor(@Inject(TranslateService) private translate: TranslateService, @Inject(ThemeService) private themeService: ThemeService) {
+  constructor(@Inject(TranslateService) private readonly translate: TranslateService, @Inject(ThemeService) private readonly themeService: ThemeService) {
     this.translate.setDefaultLang(this.selectedLanguage);
     this.selectedTheme = this.themeService.getTheme();
   }

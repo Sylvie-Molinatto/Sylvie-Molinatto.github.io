@@ -20,7 +20,7 @@ export class NavbarComponent{
   @Input() toggleTheme!: () => void;
   
 
-  private offcanvasService = inject(NgbOffcanvas);
+  private readonly offcanvasService = inject(NgbOffcanvas);
 	closeResult = '';
 
 	open(content: TemplateRef<any>) {
