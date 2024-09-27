@@ -1,10 +1,11 @@
 @import '../../../styles.scss';
 @import '../../../styles/img-styles.scss';
+@import '../../../styles/title_styles.scss';
 
 .container {
   display: flex;
   justify-content: center;
-  padding: 4em;
+  padding: 0em 4em 3em 4em;
 }
 
 p{
@@ -62,7 +63,7 @@ body {
     padding: 0 0 0 1em;
   }
 
-  .title {
+  .event-title {
     font-size: 16px;
     font-weight: 600;
     margin: 0 0 px;
@@ -137,7 +138,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    padding: 2em;
+    padding: 0 2em 2em 2em;
   }
   .container-info {
     padding-top: 1em 0 1em 0;

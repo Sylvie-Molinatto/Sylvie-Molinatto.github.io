@@ -1,0 +1,47 @@
+.title {
+    padding: 2em;
+}
+
+.pills {
+    display: inline-block;
+    background: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.line {
+    background: var(--primary-color);
+    height: 2px;
+    width: 100%;
+    margin: -25px auto 0;
+}
+
+.blur {
+    width: 5vw;
+    height: 5vw;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(5vw);
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .title{
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .blur {
+        width: 20vw;
+        filter: blur(10vw);
+    }
+
+    .line {
+        width: 90%;
+    }
+}

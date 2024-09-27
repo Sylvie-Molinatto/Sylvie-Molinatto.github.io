@@ -1,32 +1,44 @@
-<div class='container'>
-  <div class='steps' id='steps'>
-    <div class='step' *ngFor="let event of events; let i = index">
-      <div class='number completed'>
-        <div *ngIf="i === 0" class="custom-spinner"></div>
-        <svg *ngIf="i !== 0" viewBox="0 0 512 512" width="100" title="check">
-          <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
-        </svg>
+<section>
+  <div class="title">
+    <div class="row text-center py-4">
+      <div class="col-sm-12">
+          <div class="blur"></div>
+          <span class="pills">{{'EDUCATION' | translate}}</span>
+          <div class="line"></div>
       </div>
-      <div class="container-info">
-        <div class='info'>
-          <div class="left-info">
-            <h6 class="dates">{{ event.startYear }} - {{ event.endYear }}</h6>
-            <h5 class="location">
-              {{ event.location }}
-            </h5>
-            <h3 class='title'>
-              {{ event.title }}
-            </h3>
-          </div>
-          <div class="right-info">
-            <!-- show dark logo if light theme and white logo if dark theme -->
-            <img *ngIf="selectedTheme === 'light'" [src]="event.logoBlack" alt="logo" class="logo" width="80"/>
-            <img *ngIf="selectedTheme === 'dark'" [src]="event.logoWhite" alt="logo" class="logo" width="80"/>
-          </div>
-        </div>
-        <p class='text' *ngIf="event.description">
-          {{ event.description }}
-        </p>
     </div>
   </div>
-</div>
+  <div class='container'>
+    <div class='steps' id='steps'>
+      <div class='step' *ngFor="let event of events; let i = index">
+        <div class='number completed'>
+          <div *ngIf="i === 0" class="custom-spinner"></div>
+          <svg *ngIf="i !== 0" viewBox="0 0 512 512" width="100" title="check">
+            <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+          </svg>
+        </div>
+        <div class="container-info">
+          <div class='info'>
+            <div class="left-info">
+              <h6 class="dates">{{ event.startYear }} - {{ event.endYear }}</h6>
+              <h5 class="location">
+                {{ event.location }}
+              </h5>
+              <h3 class="event-title">
+                {{ event.title }}
+              </h3>
+            </div>
+            <div class="right-info">
+              <!-- show dark logo if light theme and white logo if dark theme -->
+              <img *ngIf="selectedTheme === 'light'" [src]="event.logoBlack" alt="logo" class="logo" width="80"/>
+              <img *ngIf="selectedTheme === 'dark'" [src]="event.logoWhite" alt="logo" class="logo" width="80"/>
+            </div>
+          </div>
+          <p class='text' *ngIf="event.description">
+            {{ event.description }}
+          </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>

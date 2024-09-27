@@ -1,23 +1,34 @@
-<div class="container">
-  <div *ngFor="let project of projects">
-    <mat-card class="example-card">
-      <img mat-card-image [src]="project.image" [alt]="project.title" alt="Image" class="img">
-      <mat-card-header>
-        <mat-card-title class="title">{{ project.title }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content class="card-content">
-        <p>{{ project.description }}</p>
-        <div class="tags">
-          <span *ngFor="let keyword of project.keywords" class="tag">{{ keyword }}</span>
-        </div>
-      </mat-card-content>
-      <mat-card-footer class="card-footer">
-        <mat-card-actions class="card-actions">
-          <a class="btn btn-outline-secondary" [href]="project.link" target="_blank">
-            <span> {{ 'PROJECTS_SECTION.VIEW_PROJECT' | translate }} </span>
-          </a>
-        </mat-card-actions>
-      </mat-card-footer>
-    </mat-card>
+<section>
+  <div class="title">
+    <div class="row text-center py-4">
+      <div class="col-sm-12">
+          <div class="blur"></div>
+          <span class="pills">{{'PROJECTS' | translate}}</span>
+          <div class="line"></div>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="container">
+    <div *ngFor="let project of projects">
+      <mat-card class="example-card">
+        <img mat-card-image [src]="project.image" [alt]="project.title" alt="Image" class="img">
+        <mat-card-header>
+          <mat-card-title class="card-title">{{ project.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="card-content">
+          <p>{{ project.description }}</p>
+          <div class="tags">
+            <span *ngFor="let keyword of project.keywords" class="tag">{{ keyword }}</span>
+          </div>
+        </mat-card-content>
+        <mat-card-footer class="card-footer">
+          <mat-card-actions class="card-actions">
+            <a class="btn btn-outline-secondary" [href]="project.link" target="_blank">
+              <span> {{ 'PROJECTS_SECTION.VIEW_PROJECT' | translate }} </span>
+            </a>
+          </mat-card-actions>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+</section>

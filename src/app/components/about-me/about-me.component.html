@@ -1,32 +1,36 @@
 <section>
-  <div class="content">
-    <div class="title container">
-      <h2> {{ 'ABOUT_ME' | translate }} </h2>
-    </div>
-    <div class="container">
-      <div class="left-side">
-        <p class="description">{{'ABOUT_SECTION.DESCRIPTION' | translate}}</p>
-        <a href="cv.pdf" download="CV">
-          <button type="button" class="btn btn-outline-secondary">
-              <span> {{ 'ABOUT_SECTION.DOWNLOAD_CV' | translate }} </span>
-          </button>
-        </a>
-      </div>
-      <div class="right-side">
-        <div class="info-row">
-          <span class="bold"> {{'ABOUT_SECTION.NAME' | translate }}:</span> <span> Sylvie Molinatto </span>
-        </div>
-        <div class="info-row">
-          <span class="bold"> {{'ABOUT_SECTION.DATE_OF_BIRTH' | translate }}:</span> <span> 06/12/2000 </span>
-        </div>
-        <div class="info-row">
-          <span class="bold"> Email:</span> <span> sylvie.molinatto00&#64;gmail.com </span>
-        </div>
-        <div class="info-row">
-          <span class="bold"> {{ 'ABOUT_SECTION.FROM' | translate }}:</span> <span> Condove (TO), Italy </span>
-        </div>
+  <div class="title">
+    <div class="row text-center py-4">
+      <div class="col-sm-12">
+          <div class="blur"></div>
+          <span class="pills">{{'ABOUT_ME' | translate}}</span>
+          <div class="line"></div>
       </div>
     </div>
-    <app-skills></app-skills>
   </div>
+  <div class="container">
+    <div class="left-side">
+      <p class="description">{{'ABOUT_SECTION.DESCRIPTION' | translate}}</p>
+      <a href="cv.pdf" download="CV">
+        <button type="button" class="btn btn-outline-secondary">
+            <span> {{ 'ABOUT_SECTION.DOWNLOAD_CV' | translate }} </span>
+        </button>
+      </a>
+    </div>
+    <div class="right-side">
+      <div class="info-row">
+        <span class="bold"> {{'ABOUT_SECTION.NAME' | translate }}:</span> <span> Sylvie Molinatto </span>
+      </div>
+      <div class="info-row">
+        <span class="bold"> {{'ABOUT_SECTION.DATE_OF_BIRTH' | translate }}:</span> <span> 06/12/2000 </span>
+      </div>
+      <div class="info-row">
+        <span class="bold"> Email:</span> <span> sylvie.molinatto00&#64;gmail.com </span>
+      </div>
+      <div class="info-row">
+        <span class="bold"> {{ 'ABOUT_SECTION.FROM' | translate }}:</span> <span> Condove (TO), Italy </span>
+      </div>
+    </div>
+  </div>
+  <app-skills></app-skills>
 </section>

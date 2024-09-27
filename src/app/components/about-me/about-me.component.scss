@@ -1,16 +1,9 @@
-.content {
-    padding: 2em;
-}
-
-.title {
-    font-weight: bold;
-}
+@import '../../../styles/title_styles.scss';
 
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
 }
 
 .left-side {
@@ -46,19 +39,9 @@
 }
 
 @media (max-width: 768px) {
-    .content{
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-
-    .title {
-        text-align: center;
-    }
-
     .container {
         display: block;
         text-align: center;
-        padding: 0;
     }
 
     .right-side {
